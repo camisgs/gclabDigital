@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  background-color: rgba(0, 0, 0, 0.948);
+  scroll-behavior: smooth;
+}
+
+.menu{
+    width: 100%;
+    height: 7rem;
+    background-color: rgb(21, 21, 21);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu img{
+    width: 23rem;
+    height: 13rem;
+}
+
+.menu nav ul {
+    display: flex;
+    gap: 12rem;
+    list-style: none;
+
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+    position: relative;
+    transition: color .3s;
+}
+
+.menu a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -.5rem;
+    width: 0;
+    height: .2rem;
+    background: #3B82F6;
+    transition: width .3s ease;
+}
+
+.menu a:hover{
+    color: #3B82F6;
+}
+
+.menu a:hover::after{
+    width: 100%;
+}
+
+.menu button{
+    background: linear-gradient(135deg, #645cff, #5a1ee6);
+    color: #e8e8f6;
+    border: none;
+    border-radius: 5rem;
+     width: 20rem;
+     height: 5rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .3s ease;
+    box-shadow: 0 1rem 2.5rem rgba(21, 12, 202, 0.388);
+    margin-right: 2rem;
+}
+
+.menu button:hover{
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1.5rem 3.5rem rgba(108, 99, 255, .45);
+}
+
+.menu button:active{
+    transform: scale(.97);
+}
+
+
+
+.centro {
+    width: 100%;
+    height: 60rem;
+    background-color: rgba(0, 0, 0, 0.948);
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.txt{
+    margin-left: 10rem;
+ width: 44rem;
+font-size: 1.7rem;
+display: flex;
+flex-direction: column;
+gap: 2rem;
+}
+.azul{
+    color: #3B82F6;
+}
+
+.botoes{
+    display: flex;
+    margin-left: 10rem;
+    width: 40rem;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.botoes .button1{
+    width: 20rem;
+    height: 5rem;
+    border: 0.1rem solid rgba(255, 255, 255, 0.629);
+    border-radius: 0.2rem;
+     background: linear-gradient(135deg, #645cff, #5a1ee6);
+     color: white;
+     font-size: 1.7rem;
+     font-weight: 600;
+    cursor: pointer;
+    transition: all .3s ease;
+    box-shadow: 0 1rem 2.5rem rgba(21, 12, 202, 0.388);
+
+}
+
+.button1:hover{
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1.5rem 3.5rem rgba(108, 99, 255, .45);
+}
+
+
+.button2{
+     width: 20rem;
+    height: 5rem;
+    border: 0.1rem solid rgba(255, 255, 255, 0.356);
+    border-radius: 0.2rem;
+     background: linear-gradient(135deg, #1d1d1daf, #39383cc1);
+     color: white;
+     font-size: 1.7rem;
+     font-weight: 600;
+    cursor: pointer;
+    transition: all .3s ease;
+    box-shadow: 0 1rem 2.5rem rgba(21, 12, 202, 0.388);
+}
+.button2:hover{
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1.5rem 3.5rem rgba(205, 205, 208, 0.45);
+}
+
+.centro img{
+    width: 80rem;
+    height: auto;
+   
+}
+
+.topicos{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 5rem;
+    margin-left: 7rem;
+}
+
+
+.coluna img{
+    width: 8rem;
+    height: auto;
+}
+
+.coluna h1{
+    font-size: 1rem;
+}
+
+.coluna{
+    display: flex;
+    align-items: center;
+}
+
+.coluna p{
+    font-size: 1.2rem;
+
+}
+
+
+.base{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.gcdigital{
+    width: 30rem;
+    height: 4rem;
+   background-color: rgb(21, 21, 21);
+    margin-left: 10rem;
+    color: #3B82F6;   
+    border: 0.1rem solid blue;
+    border-radius: 4rem;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.textos{
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    margin-top: 1rem;
+    gap: 2rem;
+}
+
+.txt1{
+    width: 47rem;
+    font-size: 1.7rem;
+    margin-right: 2rem;
+}
+
+.txt2{
+    width: 60rem;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+
+.linha1{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    color: white;
+
+}
+.linha2{
+   margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    color: white;
+    margin-top: 3rem;
+}
+.caixa{
+  border: 0.1rem solid white;
+  border-radius: 1rem;
+  width: 40rem;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+ box-shadow: 0 0 2rem rgba(59, 130, 246, .2);
+ transition: 0.5s;
+}
+.caixa:hover{
+    box-shadow: 0 0 2rem rgba(212, 226, 248, 0.2);
+    width: 40.5rem;
+    height: 20.5rem;
+}
+
+.caixa div{
+     border-left: .2rem solid #3B82F6;
+    padding-left: 2rem;
+}
+.caixa div p{
+    font-size: 1.2rem;
+    
+}
+
+.caixa img{
+    width: 13rem;
+    height: auto;
+}
+
+
+.projeto{
+       width: 40rem;
+    height: 5rem;
+     background: rgba(0, 0, 0, 0.4);
+    margin-left: 10rem;
+    color: #e1e3e670;   
+    border: 0.1rem solid rgba(102, 102, 172, 0.326);
+    border-radius: 4rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    box-shadow: 0 0 1rem rgba(213, 209, 254, 0.479);
+
+}
+.projeto .dois{
+     color: #3B82F6;
+}
+.projeto .um{
+    color: white;
+}
+
+.baseProjeto{
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+    margin-right: 10rem;
+}
+
+.h2{
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    font-size: 6rem;
+    text-shadow: 3rem 3rem 9rem rgba(121, 133, 194, 0.5); 
+}
+
+.h2 span{
+    color: #3B82F6;
+   text-shadow: .2rem .2rem .8rem rgba(6, 31, 151, 0.5); 
+}
+
+.portifolio1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  
+}
+
+.projeto1{
+    width: 140rem;
+    border-radius: 3rem;
+    overflow: hidden;
+    border: .1rem solid #2b2b2b;
+    box-shadow: 0 2rem 5rem rgba(0,0,0,.35);
+    transition: .3s;
+    margin-left: 5rem;
+    margin-top: 5rem;
+}
+.projeto1:hover{
+    transform: translateY(-.5rem);
+
+    box-shadow: 0 2rem 5rem rgba(59,130,246,.18);
+}
+
+.projeto1 img{
+    width: 100%;
+    display: block;
+}
+
+.frase{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+ 
+.frase h1{
+    font-size: 2rem;
+}
+.h1 {
+    color: #3B82F6;
+}
